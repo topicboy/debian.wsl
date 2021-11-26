@@ -23,7 +23,7 @@
 # m h  dom mon dow   command
 * * * * * ~/scripts/housekeeping.sh cron
 #0 20 * * * bash ~/scripts/housekeeping.sh && echo "$(date '+%F %T')" >> ~/scripts/housekeeping.log
-#* * * * * bash /root/scripts/backup.sh && echo "$(date '+%F %T')" >> ~/scripts/backup.log
+* * * * * ~/scripts/backup.sh cront
 #0 20 * * * bash /root/scripts/backup.sh && echo "$(date '+%F %T')" >> ~/scripts/backup.log
 #* * * * * . /root/scripts/stack-1-update.sh && echo "$(date '+%F %T')" >> ~/scripts/stack-1-update.log
 #0 21 * * * . /root/scripts/stack-1-update.sh && echo "$(date '+%F %T')" >> ~/scripts/stack-1-update.log
