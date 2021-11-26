@@ -25,7 +25,7 @@
 #0 20 * * * bash ~/scripts/housekeeping.sh && echo "$(date '+%F %T')" >> ~/scripts/housekeeping.log
 * * * * * ~/scripts/backup.sh cron
 #0 20 * * * bash /root/scripts/backup.sh && echo "$(date '+%F %T')" >> ~/scripts/backup.log
-#* * * * * . /root/scripts/stack-1-update.sh && echo "$(date '+%F %T')" >> ~/scripts/stack-1-update.log
+#35 20 * * * . /root/scripts/stack-1-update.sh && echo "$(date '+%F %T')" >> ~/scripts/stack-1-update.log
 #0 21 * * * . /root/scripts/stack-1-update.sh && echo "$(date '+%F %T')" >> ~/scripts/stack-1-update.log
 #* * * * * echo date '+%F %T' >> /root/scripts/crontab.log
 #* * * * * echo $(date '+%F %T') >> /root/scripts/crontab.log
