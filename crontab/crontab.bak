@@ -21,16 +21,8 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-* * * * * ~/scripts/housekeeping.sh cron
-#0 20 * * * bash ~/scripts/housekeeping.sh && echo "$(date '+%F %T')" >> ~/scripts/housekeeping.log
-* * * * * ~/scripts/backup.sh cron
-#0 20 * * * bash /root/scripts/backup.sh && echo "$(date '+%F %T')" >> ~/scripts/backup.log
-#35 20 * * * . /root/scripts/stack-1-update.sh && echo "$(date '+%F %T')" >> ~/scripts/stack-1-update.log
-#0 21 * * * . /root/scripts/stack-1-update.sh && echo "$(date '+%F %T')" >> ~/scripts/stack-1-update.log
-#* * * * * echo date '+%F %T' >> /root/scripts/crontab.log
-#* * * * * echo $(date '+%F %T') >> /root/scripts/crontab.log
-#* * * * * echo "$(date '+%F %T')" >> /root/scripts/crontab.log
-#* * * * * echo "gnagarsvin!" >> /root/scripts/crontab.log
-#* * * * * echo date '+%F %T' >> /root/scripts/crontab.log
-#* * * * * echo $(date '+%F %T') >> /root/scripts/crontab.log
-#* * * * * bash date '+%F %T' >> /root/scripts/crontab.log
+0 20 * * * ~/scripts/housekeeping.sh cron
+0 20 * * * ~/scripts/backup.sh
+45 20 * * * ~/scripts/housekeeping.sh cron
+45 20 * * * ~/scripts/backup.sh
+*/3 * * * *  ~/root/scripts/stack-1-update.sh cron
