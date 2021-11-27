@@ -23,5 +23,4 @@
 # m h  dom mon dow   command
 0 20 * * * ~/scripts/housekeeping.sh cron
 0 20 * * * ~/scripts/backup.sh cron
-46 20 * * * ~/scripts/backup.sh cron
-*/3 * * * *  ~/root/scripts/stack-1-update.sh cron
+30 1 * * *  ~/scripts/stack-1-update.sh cron

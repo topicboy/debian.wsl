@@ -18,8 +18,8 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
-# Git
-alias cdgh='cd /mnt/c/Users/topicboy/Git/github'
+# Dirs
+alias cdg='cd ~/git/'
 alias cds='cd ~/scripts'
 
 # CD

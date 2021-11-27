@@ -19,7 +19,7 @@ ssh-add ~/.ssh/BACKUP_ed25519
 ## COPY ##
 
 # crontab #
-crontab -l >$wsl/crontab/crontab.bak
+crontab -l > $wsl/crontab/crontab.bak
 
 # fstab #
 cat /etc/fstab > $wsl/etc/fstab
