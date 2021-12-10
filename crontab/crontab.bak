@@ -24,4 +24,5 @@
 0 20 * * * ~/scripts/housekeeping.sh cron
 0 20 * * * ~/scripts/backup.sh cron
 50 2 * * *  ~/scripts/stack-1-update.sh cron
-@reboot ~/scripts/wsl-init.sh
+#@reboot sleep 120s && ~/scripts/stack-1-update.sh
+#@reboot sleep 15s && export DOCKER_HOST=tcp://localhost:23750
